@@ -12,7 +12,8 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.HOME;
+  // ignore: constant_identifier_names
+  static const INITIAL = Routes.FLASH_CHAT;
 
   static final routes = [
     GetPage(
