@@ -1,3 +1,4 @@
+// import 'package:chat_app/src/modules/login/views/registr_view.dart';
 import 'package:get/get.dart';
 
 import '../modules/flash_chat/bindings/flash_chat_binding.dart';
@@ -28,8 +29,13 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.LOGIN,
-      page: () => const LoginView(),
+      page: () => LoginView(Get.arguments),
       binding: LoginBinding(),
     ),
+    // GetPage(
+    //   name: _Paths.LOGIN,
+    //   page: () => const RegistrView(),
+    //   binding: LoginBinding(),
+    // ),
   ];
 }
